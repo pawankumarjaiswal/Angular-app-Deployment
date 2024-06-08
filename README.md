@@ -173,35 +173,3 @@ Password: admin@123
    ![image](https://github.com/mayur4279/Angular-app-Deployment/assets/73772313/367a615c-c3bc-4e6f-a83d-cc0b49dbad97)
 
 
-
-
-
-
-10. Create Cloudfront Distribution
-    ![cloudfront-dis](https://github.com/abhipraydhoble/Project-Angular-App/assets/122669982/b7734aee-4c8d-4cb7-a4a2-b2334399ddd8)
-
-
-    ![Angular-cdn](https://github.com/abhipraydhoble/Project-Angular-App/assets/122669982/aba82b3f-ca43-4a34-9a4e-89a4db42f7c2)
-
-11. Step 10: Create Hosted zone in route:53
-    ![hosted zone](https://github.com/abhipraydhoble/Project-Angular-App/assets/122669982/cc0abb81-4184-4dcd-b159-3b0e35f7a2d3)
-
-
-12. Step 11: ADD NS records in hostinger
-
-13. Generate SSL certificate and create records in s3
-
-    ![ssl](https://github.com/abhipraydhoble/Project-Angular-App/assets/122669982/d31be2ab-1dfa-4d1a-949b-7aa2ca82c0e0)
-
-14. Step 13: Attach SSL to cloudfront distribution
-
-15. Create A record in RT-53 and add cloufront distribution
-
-    ![a-record](https://github.com/abhipraydhoble/Project-Angular-App/assets/122669982/fc902838-ad31-487c-a92d-51316ccd4648)
-
-16. Final Result
-
-    ![domain-frontend](https://github.com/abhipraydhoble/Project-Angular-App/assets/122669982/083c3e34-543b-4a9e-a40a-bb06b1beea2a)
-
-
-
