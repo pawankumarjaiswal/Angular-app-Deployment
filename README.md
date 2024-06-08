@@ -138,7 +138,7 @@ Password: admin@123
     
 11. Go to browser and hit public-ip of frontend instance
 
-
+    ![image](https://github.com/mayur4279/Angular-app-Deployment/assets/73772313/b5735e32-deae-448b-80d2-8a1be86d50a5)
 
 
 
