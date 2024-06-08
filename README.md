@@ -1,5 +1,12 @@
 # Angular-app-Deployment
 
+### Table Of Content 
+
+1. [Create RDS Database in AWS](#create-rds-database-in-aws)
+2. [Create Backend](#create-backend)
+3. [Create Frontend](#create-frontend)
+4. [Deploy Frontend App with S3 Bucket](#deploy-frontend-app-with-s3-bucket)
+
 ### Step-1) Create RDS Database in Aws  
 ![image](https://github.com/mayur4279/Angular-app-Deployment/assets/73772313/66f2cd9c-8627-49ac-8107-3b68b7787e05)
 Username: admin  </br>
@@ -19,7 +26,7 @@ Password: admin@123
   ```
   git clone  https://github.com/mayur4279/Angular-app-Deployment
   cd Angular-app-Deployment
-  sudo mysql -h  -u Angular-db -pPasswd123$ springbackend < springbackend.sql
+  sudo mysql -h  <Rds-Database-endpoint> -u admin -padmin@123 springbackend < springbackend.sql
   ```
   ```
   show databases;
