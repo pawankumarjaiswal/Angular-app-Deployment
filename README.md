@@ -1,12 +1,13 @@
 # Angular-app-Deployment
 
-### Table Of Content 
 
-1. [Step-1) Create RDS Database in AWS](#create-rds-database-in-aws)
-2. [Step-2) Create backend  ](#create-backend)
-3. [Step-3) Create Frontend  ](#create-frontend)
-4. [Step-4) Deploying Frontend app with s3 bucket  
-](#deploy-frontend-app-with-s3-bucket)
+### Table Of Content
+
+1. [Step-1: Create RDS Database in AWS](#step-1-create-rds-database-in-aws)
+2. [Step-2: Create Backend](#step-2-create-backend)
+3. [Step-3: Create Frontend](#step-3-create-frontend)
+4. [Step-4: Deploy Frontend App with S3 Bucket](#step-4-deploy-frontend-app-with-s3-bucket)
+
 
 ### Step-1) Create RDS Database in AWS
 ![image](https://github.com/mayur4279/Angular-app-Deployment/assets/73772313/66f2cd9c-8627-49ac-8107-3b68b7787e05)
