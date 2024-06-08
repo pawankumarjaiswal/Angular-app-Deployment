@@ -143,7 +143,7 @@ Password: admin@123
 
 
 
-### Deploying Frontend app with s3 bucket  
+### Step-3) Deploying Frontend app with s3 bucket  
 
 1. Install AWS CLI
    ```
