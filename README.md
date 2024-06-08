@@ -27,7 +27,7 @@ Password: admin@123
   select * from tbl_workers;
   ```  
   
-### Step-2 Create backend  
+### Step-2) Create backend  
 
 1. launch **ubuntu** Instance: (make sure to allow port 8080 in security group)
    
@@ -37,6 +37,7 @@ Password: admin@123
    ```
    sudo apt update -y
    sudo apt install git -y
+   git clone https://github.com/mayur4279/Angular-app-Deployment
    ````
 
 4. Install Openjdk-8:
@@ -49,40 +50,40 @@ Password: admin@123
    ```
 6. Create Database Connection with RDS Database:
    ```
-   vim   Angular-app-Deployment/angular-frontend/src/main/resources/application.properties
-   #add db-endpoint 2. username 3. password
+   cd Angular-app-Deployment
+   vim spring-backend/src/main/resources/application.properties
    ```
+   - add db-endpoint, username, password
+
+   ![image](https://github.com/mayur4279/Angular-app-Deployment/assets/73772313/577126f1-6119-4825-b2f9-b5d8017478e5)
 
 7. Build the project using Maven:
    ```
-   cd  Angular-app-Deployment/angular-frontend/
+   cd  Angular-app-Deployment/spring-backend/
    mvn clean package -Dmaven.test.skip=true
    ```
+   ![image](https://github.com/mayur4279/Angular-app-Deployment/assets/73772313/74269948-8fbf-41d3-9279-435efbb16ee6)
+
+8. Compiled java application successfully created
+
+   ![image](https://github.com/mayur4279/Angular-app-Deployment/assets/73772313/44c4b161-bfec-435d-819f-8dfd10d6cb92)
+
 8. Run The Application  
    ```
    java -jar target/spring-backend-v1.jar
    ```
+   ![image](https://github.com/mayur4279/Angular-app-Deployment/assets/73772313/e26e491e-75df-4312-9e43-0074bd790ff7)
 
+### Step-3) Create Frontend  
 
-### Step-3 Create Frontend  
+1. Launch New Ubuntu Instance (make sure allow port http/80 in security group)
 
-1. Install AWS CLI
-   ```
-   sudo apt install unzip -y
-   curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-   unzip awscliv2.zip
-   sudo ./aws/install
-   ```
-   
-   ```
-   aws configure
-   ```
+   ![image](https://github.com/mayur4279/Angular-app-Deployment/assets/73772313/1f2a6963-ba25-499a-bde6-78386cdf1ca0)
 
 2. Install Node.js and npm
-
    ```bash
-   sudo apt update
-   sudo apt install nodejs npm
+   sudo apt update -y  
+   sudo apt install -y nodejs npm  
    ```
 
 3. Check Node.js and npm versions
@@ -101,31 +102,42 @@ Password: admin@123
    ```bash
    ng version
    ```
+6. Install Angular js code
+  ```
+  git clone https://github.com/mayur4279/Angular-app-Deployment
+  cd Angular-app-Deployment/angular-frontend
+  ```
 
 6. Step 5: Connect to backend server
    ```
-   cd src/app/services
-   sudo nano worker.service.ts
+   vim src/app/services/worker.service.ts
    ```
 Note: add public-ip of backend server
 
+   ![image](https://github.com/mayur4279/Angular-app-Deployment/assets/73772313/b016e38a-e654-479d-a09a-37b49270d8dc)
 
 7. Install project dependencies (if needed)
 
    ```bash
    cd Angular-app-Deployment/angular-frontend
-   npm install
-   ng build 
+   ```
+8. Build The frontend with ng command  
+   ```
+   ng build
+   ```
+   ![image](https://github.com/mayur4279/Angular-app-Deployment/assets/73772313/c3e6bddb-e825-47c8-a18c-68de658e1ac5)
+
+   New Directory Automatically created After building process is complete.
+
+   ![image](https://github.com/mayur4279/Angular-app-Deployment/assets/73772313/f4d6520f-2d6a-42f1-899c-1e33b0b5b15f)
+
+10. Start the server
+   ```
    sudo ng serve --host 0.0.0.0 --port=80
    ```
-
-   ![ng-serve-host](https://github.com/abhipraydhoble/Project-Angular-App/assets/122669982/6e07ffc0-6c54-403c-9e86-62cd85f898fa)
-
-
+   ![image](https://github.com/mayur4279/Angular-app-Deployment/assets/73772313/e6ce765f-d277-40a1-a3cc-d4489af1fa66)
+    
 8. Go to browser and hit public-ip of frontend instance
-
-
-![angular-ip](https://github.com/abhipraydhoble/Project-Angular-App/assets/122669982/bac432e1-9f04-4b7d-81c9-8ed8e879793b)
 
 
 9. Deploy the artifact to s3 bucket
@@ -164,3 +176,21 @@ Note: add public-ip of backend server
     ![domain-frontend](https://github.com/abhipraydhoble/Project-Angular-App/assets/122669982/083c3e34-543b-4a9e-a40a-bb06b1beea2a)
 
   
+
+
+
+
+
+
+
+1. Install AWS CLI
+   ```
+   sudo apt install unzip -y
+   curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+   unzip awscliv2.zip
+   sudo ./aws/install
+   ```
+   
+   ```
+   aws configure
+   ```
