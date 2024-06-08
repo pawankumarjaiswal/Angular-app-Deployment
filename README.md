@@ -1,13 +1,13 @@
 # Angular-app-Deployment
 
-### Step-1 Create RDS Database in Aws  
+### Step-1) Create RDS Database in Aws  
 ![image](https://github.com/mayur4279/Angular-app-Deployment/assets/73772313/66f2cd9c-8627-49ac-8107-3b68b7787e05)
 Username: admin  </br>
 Password: admin@123  
 
 - launch  Any instance and mariadb-server (We are installing mariadb-server beacuse we required mysql client) 
   ```
-  sudo apt update
+  sudo apt update -y 
   sudo apt install mariadb-server -y
   ```
 - Create Database for our application  
@@ -29,8 +29,11 @@ Password: admin@123
   
 ### Step-2 Create backend  
 
-1. launch ubuntu Instance: (make sure to allow port 8080 in security group)   
-2. Update the packages:
+1. launch **ubuntu** Instance: (make sure to allow port 8080 in security group)
+   
+   ![image](https://github.com/mayur4279/Angular-app-Deployment/assets/73772313/c30b8ce5-7199-49fd-a742-cd8722c87ad3)
+
+3. Update the packages:
    ```
    sudo apt update -y
    sudo apt install git -y
