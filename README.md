@@ -6,7 +6,8 @@
 1. [Step-1: Create RDS Database in AWS](#step-1-create-rds-database-in-aws)
 2. [Step-2: Create Backend](#step-2-create-backend)
 3. [Step-3: Create Frontend](#step-3-create-frontend)
-4. [Step-4: Deploying Frontend app with S3 bucket](#step-4-deploy-frontend-app-with-s3-bucket)
+4. [Step-4: Deploying Frontend App with S3 Bucket](#step-4-deploying-frontend-app-with-s3-bucket)
+
 
 
 ### Step-1) Create RDS Database in AWS
