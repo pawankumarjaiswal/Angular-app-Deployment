@@ -143,7 +143,7 @@ Password: admin@123
 
 
 
-### Deploy the artifact to s3 bucket
+### Deploying Frontend app with s3 bucket  
 
 1. Install AWS CLI
    ```
@@ -155,12 +155,27 @@ Password: admin@123
    ```
    aws configure
    ```
-   
+
    ````
    cd dist/angular-frontend
    aws s3 mb s3://angular-frontend-app-buck
    aws s3 cp .  s3://angular-frontend-buck --recursive
    ````
+
+2. For making Our webite publically accessible use below steps
+   - Open s3 bucket which created for hosting website
+   - Click On Properties --> Static website hosting = enable
+   - Click On permissions --> Block all public access = off
+   - Select All objects --> Action --> Make Public Using Acls
+
+3. Succefully Access our Frontend application using Aws s3
+
+   ![image](https://github.com/mayur4279/Angular-app-Deployment/assets/73772313/367a615c-c3bc-4e6f-a83d-cc0b49dbad97)
+
+
+
+
+
 
 10. Create Cloudfront Distribution
     ![cloudfront-dis](https://github.com/abhipraydhoble/Project-Angular-App/assets/122669982/b7734aee-4c8d-4cb7-a4a2-b2334399ddd8)
