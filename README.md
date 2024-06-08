@@ -113,7 +113,8 @@ Password: admin@123
    ```
    Note: add public-ip of backend server
 
-   ![image](https://github.com/mayur4279/Angular-app-Deployment/assets/73772313/b016e38a-e654-479d-a09a-37b49270d8dc)
+  ![image](https://github.com/mayur4279/Angular-app-Deployment/assets/73772313/089b0c0f-17de-4691-a434-3633452f440a)
+
 
 8. Install project dependencies (if needed)
 
@@ -142,7 +143,19 @@ Password: admin@123
 
 
 
-9. Deploy the artifact to s3 bucket
+### Deploy the artifact to s3 bucket
+
+1. Install AWS CLI
+   ```
+   sudo apt install unzip -y
+   curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+   unzip awscliv2.zip
+   sudo ./aws/install
+   ```
+   ```
+   aws configure
+   ```
+   
    ````
    cd dist/angular-frontend
    aws s3 mb s3://angular-frontend-app-buck
@@ -175,22 +188,5 @@ Password: admin@123
 
     ![domain-frontend](https://github.com/abhipraydhoble/Project-Angular-App/assets/122669982/083c3e34-543b-4a9e-a40a-bb06b1beea2a)
 
-  
 
 
-
-
-
-
-
-1. Install AWS CLI
-   ```
-   sudo apt install unzip -y
-   curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-   unzip awscliv2.zip
-   sudo ./aws/install
-   ```
-   
-   ```
-   aws configure
-   ```
