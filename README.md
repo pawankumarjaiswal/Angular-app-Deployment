@@ -113,7 +113,7 @@ Password: admin@123
    ```
    Note: add public-ip of backend server
 
-  ![image](https://github.com/mayur4279/Angular-app-Deployment/assets/73772313/089b0c0f-17de-4691-a434-3633452f440a)
+   ![image](https://github.com/mayur4279/Angular-app-Deployment/assets/73772313/089b0c0f-17de-4691-a434-3633452f440a)
 
 
 8. Install project dependencies (if needed)
