@@ -27,36 +27,35 @@ Password:- admin@123
   select * from tbl_workers;
   ```  
   
-  
 ### Step-2 Create backend  
 
 1. launch ubuntu Instance:
 2. Update the packages:
-   
-  ```
-  sudo apt update -y
-  sudo apt install git -y
-  ```
-3. Install Openjdk-8:
+   ```
+   sudo apt update -y
+   sudo apt install git -y
+   ````
+
+4. Install Openjdk-8:
    ```
    sudo apt install openjdk-8-jdk  
    ```
-4. Install Maven:
+5. Install Maven:
    ```
    sudo apt install maven
    ```
-5. Create Database Connection with RDS Database:
+6. Create Database Connection with RDS Database:
    ```
    vim   Angular-app-Deployment/angular-frontend/src/main/resources/application.properties
    ```
    **1. add db-endpoint 2. username 3. password**
 
-6. Build the project using Maven:
+7. Build the project using Maven:
    ```
    cd  Angular-app-Deployment/angular-frontend/
    mvn clean package -Dmaven.test.skip=true
    ```
-7. Run The Application  
+8. Run The Application  
    ```
    java -jar target/spring-backend-v1.jar
    ```
