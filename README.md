@@ -103,25 +103,24 @@ Password: admin@123
    ng version
    ```
 6. Install Angular js code
-  ```
-  git clone https://github.com/mayur4279/Angular-app-Deployment
-  cd Angular-app-Deployment/angular-frontend
-  ```
-
-6. Step 5: Connect to backend server
+   ```
+   git clone https://github.com/mayur4279/Angular-app-Deployment
+   cd Angular-app-Deployment/angular-frontend
+   ```
+7. Step 5: Connect to backend server
    ```
    vim src/app/services/worker.service.ts
    ```
-Note: add public-ip of backend server
+   Note: add public-ip of backend server
 
    ![image](https://github.com/mayur4279/Angular-app-Deployment/assets/73772313/b016e38a-e654-479d-a09a-37b49270d8dc)
 
-7. Install project dependencies (if needed)
+8. Install project dependencies (if needed)
 
    ```bash
    cd Angular-app-Deployment/angular-frontend
    ```
-8. Build The frontend with ng command  
+9. Build The frontend with ng command  
    ```
    ng build
    ```
@@ -131,13 +130,16 @@ Note: add public-ip of backend server
 
    ![image](https://github.com/mayur4279/Angular-app-Deployment/assets/73772313/f4d6520f-2d6a-42f1-899c-1e33b0b5b15f)
 
-10. Start the server
-   ```
-   sudo ng serve --host 0.0.0.0 --port=80
-   ```
-   ![image](https://github.com/mayur4279/Angular-app-Deployment/assets/73772313/e6ce765f-d277-40a1-a3cc-d4489af1fa66)
+10. Start the server 
+    ```
+    sudo ng serve --host 0.0.0.0 --port=80
+    ```
+    ![image](https://github.com/mayur4279/Angular-app-Deployment/assets/73772313/e6ce765f-d277-40a1-a3cc-d4489af1fa66)
     
-8. Go to browser and hit public-ip of frontend instance
+11. Go to browser and hit public-ip of frontend instance
+
+
+
 
 
 9. Deploy the artifact to s3 bucket
@@ -149,8 +151,6 @@ Note: add public-ip of backend server
 
 10. Create Cloudfront Distribution
     ![cloudfront-dis](https://github.com/abhipraydhoble/Project-Angular-App/assets/122669982/b7734aee-4c8d-4cb7-a4a2-b2334399ddd8)
-
-
 
 
     ![Angular-cdn](https://github.com/abhipraydhoble/Project-Angular-App/assets/122669982/aba82b3f-ca43-4a34-9a4e-89a4db42f7c2)
