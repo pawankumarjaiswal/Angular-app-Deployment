@@ -32,6 +32,7 @@ Password:- admin@123
 
 1. launch ubuntu Instance:
 2. Update the packages:
+   
   ```
   sudo apt update -y
   sudo apt install git -y
